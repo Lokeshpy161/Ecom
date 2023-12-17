@@ -58,15 +58,15 @@ const ProductItem = ({ product }) => {
 };
 
 const styles = StyleSheet.create({
-    productContainer: {
-        width: '45%', // 45% to allow two products in a row with some spacing
-        marginRight: '5%', // 5% margin between products
-        marginBottom: 20,
-        backgroundColor: '#F7F7F7',
-        borderRadius: 10,
-        borderWidth: 1,
-        borderColor: '#EAEAF6',
-      },
+  productContainer: {
+    width: '95%', 
+    marginRight: '2%',
+    marginBottom: 20,
+    backgroundColor: '#F7F7F7',
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: '#EAEAF6',
+  },
       productImage: {
         width: '100%',
         height: 150,
@@ -79,7 +79,6 @@ const styles = StyleSheet.create({
       productHeader: {
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between', // Adjusted alignment
       },
       productName: {
         fontSize: 14,

@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
     marginTop: 16,
   },
   proceedButton: {
-    backgroundColor: '#F42A5C',
+    backgroundColor: 'green',
     borderRadius: 16,
     padding: 13,
     alignItems: 'center',

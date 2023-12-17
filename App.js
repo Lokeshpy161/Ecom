@@ -19,8 +19,12 @@ import Womenswear from './Pages/Womenswear';
 import Groceries from './Pages/Groceries';
 import Sproduct from './Pages/Singleproduct';
 import AllProduct from './Pages/Allproducts';
+import Dashboard from './Pages/Dashboard';
+import Filter from './Pages/Filter';
 import Cart from './Pages/Cart';
 import User from './Pages/User';
+import ProductItem from './Pages/ProductItem';
+import Gifts from './Pages/Gifts';
 
 
 const Stack = createStackNavigator();
@@ -28,7 +32,7 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Rest">
+      <Stack.Navigator initialRouteName="confirmed">
         <Stack.Screen name="Signup" component={SignUpScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
         <Stack.Screen name="CodeVerification" component={CodeVerification} options={{ headerShown: false }} />
@@ -46,8 +50,12 @@ export default function App() {
         <Stack.Screen name="Womenswear" component={Womenswear} options={{ headerShown: false }} />
         <Stack.Screen name="Groceries" component={Groceries} options={{ headerShown: false }} />
         <Stack.Screen name="SProduct" component={Sproduct} options={{ headerShown: false }} />
+        <Stack.Screen name="ProductList" component={ProductItem} options={{ headerShown: false }} />
         <Stack.Screen name="AProduct" component={AllProduct} options={{ headerShown: false }} />
+        <Stack.Screen name="Filter" component={Filter} options={{ headerShown: false }} />
+        <Stack.Screen name="Dashboard" component={Dashboard} options={{ headerShown: false }} />
         <Stack.Screen name="Cart" component={Cart} options={{ headerShown: false }} />
+        <Stack.Screen name="Gifts" component={Gifts} options={{ headerShown: false }} />
         <Stack.Screen name="User" component={User} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>

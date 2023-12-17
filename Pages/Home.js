@@ -36,6 +36,9 @@ const Home = ({ navigation }) => {
   const handleDealsPress = () => {
     navigation.navigate('Deals');
   };
+  const handleGiftsPress = () => {
+    navigation.navigate('Gifts');
+  };
   const [activeSlide, setActiveSlide] = useState(0);
 
   const carouselItems = [
@@ -82,8 +85,10 @@ const Home = ({ navigation }) => {
                       source={backl}
                       imageStyle={styles.backgroundImageStyle}
                     >
-                      <Image style={styles.productImagegt} source={item.image} />
-                      <Text style={styles.protxtgt}>{item.text}</Text>
+                      <TouchableOpacity onPress={handleGiftsPress} >
+                        <Image style={styles.productImagegt} source={item.image} />
+                        <Text style={styles.protxtgt}>{item.text}</Text>
+                      </TouchableOpacity>
                     </ImageBackground>
                   </View>
                 ) : (
@@ -287,8 +292,8 @@ const styles = StyleSheet.create({
     left:'10%',
   },
   protxtgt:{
-    left:'10%',
     color: '#FF3535',
+    alignSelf: 'center',
   },
   productImage: {
     width: 65,
